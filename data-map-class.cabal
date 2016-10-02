@@ -13,10 +13,10 @@ name:                data-map-class
 version:             0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis:            
+synopsis:            A type class exposing the Map interface
 
 -- A longer description of the package.
--- description:         
+description:         A type class exposing the Map interface
 
 -- The license under which the package is released.
 license:             MIT
@@ -45,6 +45,9 @@ build-type:          Simple
 -- Constraint on the version of Cabal needed to build this package.
 cabal-version:       >=1.10
 
+source-repository head
+  type:     git
+  location: https://github.com/literate-unitb/data-map-class
 
 library
   -- Modules exported by the library.
@@ -57,13 +60,13 @@ library
   default-extensions:    KindSignatures, TypeFamilies, TupleSections, RankNTypes, FlexibleInstances
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.9, lens >=4.13 && <4.14, containers >=0.5 && <0.6, invariants, generic-instances, unordered-containers, cereal, semigroups, hashable, data-default
+  build-depends:       base >=4.8 && <5, lens >=4.12 && <4.15, containers >=0.5 && <0.6, invariants, generic-instances, unordered-containers, cereal, semigroups, hashable, data-default
   
   ghc-options: -W -fwarn-missing-signatures 
          -fwarn-incomplete-uni-patterns
          -fwarn-missing-methods
          -fno-ignore-asserts
-         -fwarn-tabs -Werror
+         -fwarn-tabs
          -j8
 
   -- Directories containing source files.
