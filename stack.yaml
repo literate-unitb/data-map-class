@@ -41,9 +41,6 @@ packages:
 # or unsatisfied dependencies.
 - .
 - location:
-    git: https://github.com/literate-unitb/generic-instances.git
-    commit: 51cfdcd0b715f22c17f9da0321295ae67f641f25
-- location:
     git: https://github.com/literate-unitb/invariants.git
     commit: adf1145cdcab415698dd7d3c179f6d0a1a0948ff
 - location:

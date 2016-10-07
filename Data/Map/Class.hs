@@ -28,7 +28,6 @@ import qualified Data.HashMap.Lazy as HM
 -- import qualified Data.HashMap.Strict as HM
 -- #endif
 
-import GHC.Generics.Instances
 
 class IsMap (map :: * -> * -> *) where
     type IsKey map k :: Constraint
@@ -360,8 +359,6 @@ instance IsMap HM.HashMap where
 instance Default (HM.HashMap k a) where
     def = HM.empty
 
-instance (Ord k,Hashable k) => Semigroup (Intersection (HM.HashMap k a)) where
-    Intersection x <> Intersection y = Intersection $ x `intersection` y
 
 instance (Ord k,Ord a) => Ord (HM.HashMap k a) where
     compare = compare `on` toList
