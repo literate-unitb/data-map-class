@@ -60,7 +60,7 @@ library
   default-extensions:    KindSignatures, TypeFamilies, TupleSections, RankNTypes, FlexibleInstances
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <5, lens >=4.12 && <4.15, containers >=0.5 && <0.6, control-invariants, unordered-containers, cereal, semigroups, hashable, data-default
+  build-depends:       base >=4.8 && <5, lens >=4.12 && <4.16, containers >=0.5 && <0.6, control-invariants, unordered-containers, cereal, semigroups, hashable, data-default
   
   ghc-options: -W -fwarn-missing-signatures 
          -fwarn-incomplete-uni-patterns
