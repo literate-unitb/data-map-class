@@ -19,7 +19,6 @@ import Data.Default
 import Data.Function
 import Data.Hashable
 import Data.List as L
-import Data.Semigroup
 import Data.Serialize
 
 -- #ifdef __HASH_MAP_LAZY__
